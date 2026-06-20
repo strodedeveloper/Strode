@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=MedievalSharp&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-magic: "Cinzel Decorative", serif;
+  --font-body: "MedievalSharp", cursive;
+  
+  --color-gold-leaf: #d4af37;
+  --color-mystic-purple: #4b0082;
+  --color-deep-purple: #1a0026;
+  --color-obsidian: #050505;
+}
+
+/* Custom styles and scrollbars matching the medieval look */
+body {
+  font-family: var(--font-body), system-ui;
+  background-color: var(--color-obsidian);
+  color: #c0c0c0; /* silver */
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(20, 10, 30, 0.95);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-leaf);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f1c40f;
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Metallic text gradients */
+.metallic-gold-text {
+  background: linear-gradient(to bottom, #ffe699 0%, #d4af37 50%, #aa8010 51%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.metallic-silver-text {
+  background: linear-gradient(to bottom, #ffffff 0%, #cccccc 50%, #888888 51%, #cccccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
