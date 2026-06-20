@@ -1,0 +1,6 @@
+{
+  "name": "Strode",
+  "description": "Strode - The Edupath Alchemy study planner, routine tracker, and focused alchemist AI chat advisor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
